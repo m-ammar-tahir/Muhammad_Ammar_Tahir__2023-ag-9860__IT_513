@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Timetable</title>
+  <style>
+    /* Optional styling to make the table look neat */
+    table {
+      border-collapse: collapse; /* remove double borders */
+      width: 80%;
+      margin: 20px auto;
+      text-align: center;
+    }
+    caption {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 10px;
+    }
+    thead {
+      background-color: #e3e3e3;
+    }
+    tfoot {
+      background-color: #f8f8f8;
+      font-style: italic;
+    }
+    colgroup col:first-child {
+      background-color: #f0f8ff; /* Style first column using <colgroup>/<col> */
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Table starts -->
+  <table>
+    <!-- Caption gives the table a title -->
+    <caption>Weekly Class Timetable</caption>
+
+    <!-- Colgroup used to style first column -->
+    <colgroup>
+      <col> <!-- Styles the first column (Days column) -->
+      <col span="5"> <!-- Remaining 5 columns (Mon–Fri) -->
+    </colgroup>
+
+    <!-- Table Head Section -->
+    <thead>
+      <tr>
+        <!-- scope="col" tells screen readers that these are column headers -->
+        <th scope="col">Day</th>
+        <th scope="col">Monday</th>
+        <th scope="col">Tuesday</th>
+        <th scope="col">Wednesday</th>
+        <th scope="col">Thursday</th>
+        <th scope="col">Friday</th>
+      </tr>
+    </thead>
+
+    <!-- Table Body Section -->
+    <tbody>
+      <tr>
+        <!-- scope="row" tells screen readers this is a row header -->
+        <th scope="row">Morning</th>
+        <td>Math</td>
+        <td>Science</td>
+        <td>English</td>
+        <td>Computer</td>
+        <td>Art</td>
+      </tr>
+      <tr>
+        <th scope="row">Afternoon</th>
+        <td>History</td>
+        <td colspan="2">Sports</td> <!-- merged cell across Tuesday + Wednesday -->
+        <td>Geography</td>
+        <td>Music</td>
+      </tr>
+      <tr>
+        <th scope="row">Evening</th>
+        <td>Library</td>
+        <td>Math Lab</td>
+        <td>Drama</td>
+        <td>Project Work</td>
+        <td>Club Activities</td>
+      </tr>
+    </tbody>
+
+    <!-- Table Footer Section -->
+    <tfoot>
+      <tr>
+        <!-- scope="row" identifies this as footer row -->
+        <th scope="row">Note</th>
+        <td colspan="5">Timetable is subject to change by administration</td>
+      </tr>
+    </tfoot>
+  </table>
+  <!-- Table ends -->
+
+</body>
+</html>
