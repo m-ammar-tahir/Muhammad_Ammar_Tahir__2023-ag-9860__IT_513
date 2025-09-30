@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Media Page</title>
+  </head>
+  <body>
+    <h1>Media Gallery</h1>
+
+    <h2>Course Introduction (Audio)</h2>
+    <audio controls>
+      <source src="intro.mp3" type="audio/mpeg" />
+
+      Your browser does not support the audio element.
+    </audio>
+
+    <h2>Campus Tour (Video)</h2>
+    <video controls width="480" poster="thumb.jpg">
+      <source src="tour.mp4" type="video/mp4" />
+
+      <track
+        kind="captions"
+        src="tour.en.vtt"
+        srclang="en"
+        label="English"
+        default
+      />
+
+      Your browser does not support the video element.
+    </video>
+
+    <h2>Interactive Campus Map</h2>
+    <img
+      src="https://via.placeholder.com/600x400.png?text=Campus+Map"
+      alt="Campus Map"
+      usemap="#campusMap"
+      width="600"
+      height="400"
+    />
+
+    <map name="campusMap">
+      <area
+        shape="rect"
+        coords="50,50,200,150"
+        href="library.html"
+        alt="Library"
+      />
+
+      <area
+        shape="circle"
+        coords="400,150,60"
+        href="lab.html"
+        alt="Computer Lab"
+      />
+
+      <area
+        shape="poly"
+        coords="300,300,400,350,200,370"
+        href="cafeteria.html"
+        alt="Cafeteria"
+      />
+    </map>
+  </body>
+</html>
