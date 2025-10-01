@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="1st_P_style.css">
+    <title>Shopping Mall</title>
+  </head>
+  <body>
+    <header>
+      <h1>WellCome to our Shopping Mall</h1>
+      <nav>
+        <ul>
+          <li><a href="1st_P_index.html">Home</a></li>
+          <li><a href="1st_P_registration.html">Registration</a></li>
+          <li><a href="1st_P_product.html">product</a></li>
+          <li><a href="1st_P_about.html">about</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- This is main body -->
+    <main>
+  <section>
+    <h2>Contact Us</h2>
+
+    <!-- Contact Form -->
+    <article>
+      <h3>Get in Touch</h3>
+      <p>We’d love to hear from you! Please use the form below to ask about our products, orders, or services.</p>
+
+      <form action="contact-success.html" method="get">
+        <p>
+          <label for="contact-name">Your Name:</label>
+          <input type="text" id="contact-name" name="contact-name" required>
+        </p>
+        <p>
+          <label for="contact-email">Your Email:</label>
+          <input type="email" id="contact-email" name="contact-email" required>
+        </p>
+        <p>
+          <label for="contact-subject">Subject:</label>
+          <select id="contact-subject" name="contact-subject" required>
+            <option value="" selected>Select a subject</option>
+            <option value="order">Order Inquiry</option>
+            <option value="product">Product Information</option>
+            <option value="return">Return/Exchange</option>
+            <option value="payment">Payment & Billing</option>
+            <option value="other">Other</option>
+          </select>
+        </p>
+        <p>
+          <label for="contact-message">Message:</label>
+          <textarea id="contact-message" name="contact-message" rows="6" cols="50" required></textarea>
+        </p>
+        <p>
+          <label>Preferred Contact Method:</label><br>
+          <input type="radio" id="contact-email-method" name="contact-method" value="email" checked>
+          <label for="contact-email-method">Email</label>
+
+          <input type="radio" id="contact-phone-method" name="contact-method" value="phone">
+          <label for="contact-phone-method">Phone</label>
+        </p>
+        <p>
+          <input type="submit" value="Send Message">
+        </p>
+      </form>
+    </article>
+
+    <!-- Store Location -->
+    <article>
+      <h3>Our Location</h3>
+      <address>
+        My Shopping Mall<br>
+        456 Fashion Avenue<br>
+        Style City, SC 20250<br>
+        Email: <a href="mailto:support@myshoppingmall.com">support@myshoppingmall.com</a><br>
+        Phone: <a href="tel:+1234567890">(+1) 234-567-890</a>
+      </address>
+    </article>
+
+    <!-- Store Hours -->
+    <article>
+      <h3>Store Hours</h3>
+      <table border="1.0">
+        <tr>
+          <td>Monday - Friday</td>
+          <td>9:00 AM - 9:00 PM</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>10:00 AM - 8:00 PM</td>
+        </tr>
+        <tr>
+          <td>Sunday</td>
+          <td>11:00 AM - 6:00 PM</td>
+        </tr>
+      </table>
+    </article>
+
+    <!-- FAQs -->
+    <article>
+      <h3>Frequently Asked Questions</h3>
+      <details>
+        <summary>Do you offer home delivery?</summary>
+        <p>Yes, we provide fast and secure home delivery for all orders placed online.</p>
+      </details>
+
+      <details>
+        <summary>Can I return or exchange an item?</summary>
+        <p>Yes, items can be returned or exchanged within 7 days if unused and with original tags.</p>
+      </details>
+
+      <details>
+        <summary>What payment methods do you accept?</summary>
+        <p>We accept cash on delivery, credit/debit cards, and secure online payment gateways.</p>
+      </details>
+    </article>
+  </section>
+</main>
+
+
+    <!-- This is footer section -->
+    <footer>
+      <nav>
+        <ul>
+          <p>@copy rightact 2025</p>
+          <li><a href="1st_P_index.html">Home</a></li>
+          <li><a href="1st_P_registration.html">Registration</a></li>
+          <li><a href="1st_P_product.html">product</a></li>
+          <li><a href="1st_P_about.html">about</a></li>
+        </ul>
+      </nav>
+      <p>
+        Your one-stop shop for trendy shoes, clothes, and accessories—quality,
+        style, and great prices in one place.
+      </p>
+    </footer>
+  </body>
+</html>
