@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <label for="email">Email:</label>
+    <input type="email" placeholder="enter your email" required><br>
+    <label for="tel">Contact:</label>
+    <input type="tel" placeholder="enter your contact" required><br>
+    <label for="bio">bio:</label>
+    <textarea name="bio" id="bio">enter your bio</textarea><br>
+    <label for="subject">Subject:</label>
+    <select name="Subject" id="Subject">
+        <option value="zero" disabled selected>Select</option>
+        <option value="one">CS</option>
+        <option value="two">SE</option>
+        <option value="three">IT</option>
+        <option value="four">AI</option>
+        <option value="fivr">DS</option>
+    </select>
+    
+    <fieldset>
+        <legend>personal info</legend>
+        <input type="text" placeholder="enter your name" required>
+        <input type="text" placeholder="enter your AG number" required>
+        <input list="cities">
+        <datalist id="cities">
+            <option value="Faisalabad" >
+            <option value="Lahore">
+            <option value="Islamabad">
+        </datalist>
+        <button>submit
+
+        </button>
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survay</title>
+  </head>
+  <body>
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" placeholder="name" />
+    </div>
+    <div>
+      <label for="AG">AG:</label>
+      <input type="text" placeholder="AG" />
+    </div>
+    <div>
+      <label for="tel">Contact:</label>
+      <input type="tel" placeholder="Contact" />
+    </div>
+    <div>
+      <label for="Email">Email:</label>
+      <input type="Email" placeholder="Email" />
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" placeholder="password" />
+    </div>
+    <p>
+      <label for="lan">language:</label>
+      <meter value="70" min="1" max="100">70%</meter>
+
+      70%
+    </p>
+    <p>
+      <label for="skill">Skill:</label>
+      <progress max="100" value="80">80%</progress>
+      80%
+    </p>
+
+    <!-- i use Chat Gpt -->
+
+    <!-- A form that calculates the total score -->
+    <!-- 'oninput' means the calculation will update automatically whenever the input values change -->
+    <form
+      oninput="total.value = parseInt(score1.value) + parseInt(score2.value)"
+    >
+      <!-- Grouping inputs and output together inside a fieldset for better structure -->
+      <fieldset>
+        <!-- The legend is the title for this group -->
+        <legend>Score Calculator</legend>
+
+        <!-- First number input -->
+        <!-- 'id' and 'name' identify the input -->
+        <!-- 'value="0"' sets the default starting value -->
+        <label for="score1">Score 1:</label>
+        <input type="number" id="score1" name="score1" value="0" /><br /><br />
+
+        <!-- Second number input -->
+        <!-- Works the same as the first input -->
+        <label for="score2">Score 2:</label>
+        <input type="number" id="score2" name="score2" value="0" /><br /><br />
+
+        <!-- Output element to display the calculated result -->
+        <!-- 'name="total"' makes it accessible inside the JavaScript expression -->
+        <!-- 'for="score1 score2"' associates this output with the inputs -->
+        <!-- Default text inside <output> is set to 0 -->
+        <label>Total Score:</label>
+        <output name="total" for="score1 score2">0</output>
+      </fieldset>
+    </form>
+  </body>
+</html>
