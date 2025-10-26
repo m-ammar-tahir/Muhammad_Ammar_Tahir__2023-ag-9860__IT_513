@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../src/output.css" />
+    <title>1st Design</title>
+  </head>
+  <body>
+    <!-- Background -->
+    <div class="flex bg-gray-500 justify-center items-center min-h-screen">
+      <!-- card -->
+      <div class="rounded-2xl p-2 px-1 my-6 bg-gray-700">
+        <!-- flex container -->
+        <div class="flex flex-col md:flex-row sm:flex-row">
+          <img
+            src="image1.jpeg"
+            alt="image"
+            class="object-cover rounded-xl mx-1 h-80 md:h-64 md:rounded-l-xl md:rounded-none transform hover:scale-105 hover:rounded-2xl duration-200"
+          />
+          <!-- content -->
+          <div class="p-6 md:p-12">
+            <h2
+              class="font-serif text-xl font-medium text-center md:text-left text-white"
+            >
+              Get dite and fitness tips in your inbox
+            </h2>
+
+            <p
+              class="max-w-xs my-4 text-xs tracking-wide text-center text-white md:text-left"
+            >
+              Eat better and exercise better. Sign up for the Diet&Fitness
+              newsletter.
+            </p>
+            <!-- input and button -->
+
+            <div
+              class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-3"
+            >
+              <input
+                type="email"
+                placeholder="enter your email"
+                class="p-2 px-4 w-full md:w-auto text-white border border-white"
+              />
+              <button
+                class="p-2 px-4 w-full lg:w-full md:w-auto mx-4 cursor-pointer bg-green-600 font-medium rounded-md text-white hover:bg-green-800 hover:scale-105 duration-500 focus:outline"
+              >
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
